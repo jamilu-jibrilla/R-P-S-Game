@@ -1,0 +1,21 @@
+body {
+    margin: 0px;
+    transition: 0.6s;
+    background-color: #343a40;
+}
+.wrapper {
+    min-height: 100vh;
+    width: 100%;
+}
+@media screen and (min-width:500px) {
+
+    .fight-declaration {
+        margin-top: .6em;
+        letter-spacing: .2em;
+        font-weight: bold;
+    }
+    .weapons-declaration {
+        letter-spacing: .8em;
+        margin-top: .8em;
+    }
+}
