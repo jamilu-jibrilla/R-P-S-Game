@@ -21,16 +21,17 @@ function playRound(e) {
     } else {
         console.log('enter rock paper or scissors')
     }
-    scores.innerHTML = `<h4 class="text-white"> human <span style = "font-size: 2em"> ${playerScore} : ${computerScore} </span> computer </h4>`
+    scores.innerHTML = `<h4  class="mt text-white"> human <span class="wd"> ${playerScore} : ${computerScore} </span> computer </h4>`
     if (computerSelection === e.target.id) {
-        scores.innerHTML = `<h4 class="text-success">Tie Play again</h4>`
+        scores.innerHTML += ` <br> <h4 class="text-success">Tie Play again</h4>`
     }
     if (playerScore === 5) {
         scores.innerHTML = `<h4 class="text-success">You win the match!!</h4>`
         playerScore = 0;  
         computerScore = 0; 
     } else if (computerScore === 5) {
-        scores.innerHTML = `<h4 class="text-success">computer wins the match!!</h4>`
+        scores.innerHTML = `<h4 class="text-success">computer wins the match!!</h4> `
+        
         playerScore = 0;  
         computerScore = 0; 
     }
