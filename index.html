@@ -3,26 +3,81 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <title>RPS</title>
 </head>
 
 <body>
-    <div class="wrapper  text-center">
-        <h1 class="text-danger fight-declaration">Computer <span class="vs" style="font-size: .7em;" class="text-light">VS</span> Human</h1>
-        <h5 class="text-light weapons-declaration m-4">select your weopon of choice</h5>
-        <div class="container">
-            <div class="weapons m-4">
-                <button id="rock" class="btn btn-primary pl-md-4 pr-md-4">Rock</button>
-                <button id="paper" class="btn btn-success pl-md-4 pr-md-4 m-2">Paper</button>
-                <button id="scissors" class="btn btn-light">Scissors</button>
+    <div class="container">
+        <div class="scoreContainer">
+            <div class="gameName">ROCK <br> PAPER <br> SCISSORS</div>
+            <div class="gameScore">
+                <span class="letter">SCORE</span>
+                <span class="number">0</span>
             </div>
-            <div class="scores"></div>
         </div>
+        <div class="winnerAnnouncement">
+            <div class="playerSelection ">
+                <div class="text">
+                    <h2>YOU PICKED</h2>
+                </div>
+                <div class="playerBorder3">
+                    <div class="playerBorder2">
+                        <div class="playerBorder1">
+                            <div class="selection1">
+                                <div class="shape ">
+                                    <img id="imgGradPlayer" src="assets/images/icon-paper.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="morePlay">
+                <h2>YOU LOSE</h2>
+                <button class="playAgain">PLAY AGAIN</button>
+            </div>
+            <div class="computerSelection">
+                <div class="text">
+                    <h2>THE HOUSE PICKED</h2>
+                </div>
+                <div class="cover">
+                    <div class="compBorder3">
+                        <div class="compBorder2">
+                            <div class="compBorder1">
+                                <div class="selection2">
+                                    <div class="shape">
+                                        <img id="imgGradComp" src="assets/images/icon-paper.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="selectPlay">
+            <div class="border1" id="paper">
+                <div class="paper" id="paper">
+                    <img class="paperBorder" id="paper" src="assets/images/icon-paper.svg" alt="">
+                </div>
+            </div>
+            <div class="border2" id="scissors">
+                <div class="scissors" id="scissors">
+                    <img id="scissors" src="assets/images/icon-scissors.svg" alt="">
+                </div>
+            </div>
+            <div class="border3 rockBorder" id="rock">
+                <div class="rock" id="rock">
+                    <img id="rock" src="assets/images/icon-rock.svg" alt="">
+                </div>
+            </div>
+        </div>
+        <button class="rules">RULES</button>
     </div>
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
