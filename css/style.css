@@ -1,374 +1,392 @@
 body {
-    box-sizing: border-box;
-    display: flex;
-    color: white;
-    justify-content: center;
-    align-items: center;
-    font-weight: 600;
-    height: 100vh;
-    margin: 0px;
-    overflow: hidden;
-    padding: 0px;
-    background: radial-gradient(circle at top, hsl( 214, 47%, 23%), hsl(237, 49%, 15%));
+  box-sizing: border-box;
+  display: flex;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  height: 100vh;
+  margin: 0px;
+  overflow: hidden;
+  padding: 0px;
+  background: radial-gradient(
+    circle at top,
+    hsl(214, 47%, 23%),
+    hsl(237, 49%, 15%)
+  );
 }
 .winnerAnnouncement {
-    display: flex;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    display: none;
-    animation-name: example;
-    animation-duration: 2s;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: none;
+  animation-name: example;
+  animation-duration: 2s;
 }
 @keyframes example {
-    0% {
-        opacity: 0;
-    }
-    50% {
-        opacity: .6;
-    }
-    100% {
-        opacity: 1;
-    }
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 .winnerText {
-    position: relative;
-    top: 16em;
+  position: relative;
+  top: 16em;
 }
-.winner  {
-    position: relative;
-    left: 9em;
+.winner {
+  position: relative;
+  left: 9em;
 }
-.selection1, .selection2 {
-    cursor: pointer;
-    padding: 18px;
-    border-radius: 50%;
-    border-bottom:10px solid  rgba(0, 0, 0, .2) ;
-    margin: 8px;
+.selection1,
+.selection2 {
+  cursor: pointer;
+  padding: 18px;
+  border-radius: 50%;
+  border-bottom: 10px solid rgba(0, 0, 0, 0.2);
+  margin: 8px;
 }
-.selection1, .selection2, .shape {
-    height: 180px;
-    width: 190px;
+.selection1,
+.selection2,
+.shape {
+  height: 180px;
+  width: 190px;
 }
- .borderOne,.borderTwo, .borderThree {
-    position: relative;
-    box-shadow: 0px 0px 4px 9px rgba(0,0,0,.04);
-    background: radial-gradient(circle at top, hsl( 214, 47%, 23%), hsl(237, 49%, 15%));
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    z-index: -1;
-} 
- .borderOne {
-    width: 300px;
-    height: 300px;   
+.borderOne,
+.borderTwo,
+.borderThree {
+  position: relative;
+  box-shadow: 0px 0px 4px 9px rgba(0, 0, 0, 0.04);
+  background: radial-gradient(
+    circle at top,
+    hsl(214, 47%, 23%),
+    hsl(237, 49%, 15%)
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  z-index: -1;
 }
- .borderTwo {
-    width: 450px;
-    height: 450px;
+.borderOne {
+  width: 300px;
+  height: 300px;
+}
+.borderTwo {
+  width: 450px;
+  height: 450px;
 }
 .borderThree {
-    width: 600px;
-    height: 600px;
+  width: 600px;
+  height: 600px;
 }
 .shape {
-    display: grid;
-    align-items: center;
-    justify-content: center;
-    height: 180px;
-    width: 190px;
-    border-radius: 50%;
-    border-top:10px solid rgba(0, 0, 0, .1) ;
-    background-color: white;
-    position: relative;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  height: 180px;
+  width: 190px;
+  border-radius: 50%;
+  border-top: 10px solid rgba(0, 0, 0, 0.1);
+  background-color: white;
+  position: relative;
 }
 .text {
-    font-size: 12px;
-    letter-spacing: 2px;
-    margin: 3em 0px;
-    width: max-content;
+  font-size: 12px;
+  letter-spacing: 2px;
+  margin: 3em 0px;
+  width: max-content;
 }
 
 .morePlay {
-    width:max-content;
-    font-weight: bold;
-    font-size: 1.4em;
-    margin: 3em 2.7em 0px 2.7em;
-    animation-name: moreplay;
-    animation-duration: 4s;
+  width: max-content;
+  font-weight: bold;
+  font-size: 1.4em;
+  margin: 3em 2.7em 0px 2.7em;
+  animation-name: moreplay;
+  animation-duration: 4s;
 }
 .morePlayWin {
-    margin-top:3em;
-    position: absolute;
-    width:max-content;
-    font-weight: bold;
-    font-size: 1.4em;
-   
+  margin-top: 3em;
+  position: absolute;
+  width: max-content;
+  font-weight: bold;
+  font-size: 1.4em;
 }
 @keyframes moreplay {
-    0% {
-        opacity: 0;
-    }
-    50% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 .playAgain {
-    padding: 1em 2.7em;
-    border-radius: 11px;
-    border: none;
-    cursor: pointer;
-    color: red;
+  padding: 1em 2.7em;
+  border-radius: 11px;
+  border: none;
+  cursor: pointer;
+  color: red;
 }
 .playerSelection {
-    /* margin-right: 14em; */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  /* margin-right: 14em; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .computerSelection {
-    /* margin-left: -3em; */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    animation-name: comp;
-    animation-duration: 2s;
+  /* margin-left: -3em; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation-name: comp;
+  animation-duration: 2s;
 }
 @keyframes comp {
-    0% {
-        opacity: 0;
-    }
-    50% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 .rules {
-    position: absolute;
-    bottom: 3em;
-    right: 3em;
-    color: white;
-    border-radius: 13px;
-    background-color: transparent;
-    padding: .9em 2.4em;
-    cursor: pointer;
-    border: 1px solid  hsl(217, 16%, 45%);
+  position: absolute;
+  bottom: 3em;
+  right: 3em;
+  color: white;
+  border-radius: 13px;
+  background-color: transparent;
+  padding: 0.9em 2.4em;
+  cursor: pointer;
+  border: 1px solid hsl(217, 16%, 45%);
 }
 
 .container {
-    height: 400px;
-    width: 600px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 30px;
-
+  height: 400px;
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
 }
 .scoreContainer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: white;
-    border:3px solid hsl(217, 16%, 45%);
-    padding: 18px;
-    border-radius: 20px;
-    position: absolute;
-    top: 24px;
-    width: inherit;
-    /* box-sizing: border-box; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  border: 3px solid hsl(217, 16%, 45%);
+  padding: 18px;
+  border-radius: 20px;
+  position: absolute;
+  top: 24px;
+  width: inherit;
+  /* box-sizing: border-box; */
 }
 .gameScore {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: white;
-    width: 15%;
-    height: 70px;
-    color:  hsl(229, 64%, 46%);
-    border-radius: 10px;
-    padding: 10px;
-}.gameName {
-    font-size: 1.55em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  width: 15%;
+  height: 70px;
+  color: hsl(229, 64%, 46%);
+  border-radius: 10px;
+  padding: 10px;
+}
+.gameName {
+  font-size: 1.55em;
 }
 .number {
-    font-size:2.6em;
-    font-weight: bold;
-    display: block;
-    color:  hsl(229, 25%, 31%);
+  font-size: 2.6em;
+  font-weight: bold;
+  display: block;
+  color: hsl(229, 25%, 31%);
 }
 
 .selectPlay {
-    background-image: url(../assets/images/bg-triangle.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    position: relative;
-    margin-top: 10em;
-    height: 250px;
-    width: 450px;
-    /* display: none; */
+  background-image: url(../assets/images/bg-triangle.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  position: relative;
+  margin-top: 10em;
+  height: 250px;
+  width: 450px;
+  /* display: none; */
 }
 .border1 {
-    cursor: pointer;
-    height: 140px;
-    width: 150px;
-    padding: 18px;
-    border-radius: 50%;
-    position: absolute;
-    left: 0px;
-    top: -100px;
-    border-bottom:10px solid  rgba(0, 0, 0, .2) ;
-    background: linear-gradient(to right, hsl(230, 89%, 62%), hsl(230, 89%, 65%));
+  cursor: pointer;
+  height: 140px;
+  width: 150px;
+  padding: 18px;
+  border-radius: 50%;
+  position: absolute;
+  left: 0px;
+  top: -100px;
+  border-bottom: 10px solid rgba(0, 0, 0, 0.2);
+  background: linear-gradient(to right, hsl(230, 89%, 62%), hsl(230, 89%, 65%));
 }
 .border1:active {
-    background: linear-gradient(to right, hsl(230, 89%, 42%), hsl(230, 89%, 45%));  
+  background: linear-gradient(to right, hsl(230, 89%, 42%), hsl(230, 89%, 45%));
 }
-.paper{
-    display: grid;
-    align-items: center;
-    justify-content: center;
-    height: 140px;
-    width: 150px;
-    border-radius: 50%;
-    border-top:10px solid rgba(0, 0, 0, .1) ;
-    background-color: white;
+.paper {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  height: 140px;
+  width: 150px;
+  border-radius: 50%;
+  border-top: 10px solid rgba(0, 0, 0, 0.1);
+  background-color: white;
 }
-
-
 
 .border2 {
-    cursor: pointer;
-    height: 140px;
-    width: 150px;
-    padding: 18px;
-    border-radius: 50%;
-    position: absolute;
-    right: 0px;
-    top: -100px;
-    border-bottom:10px solid  rgba(0, 0, 0, .2) ;
-    background: linear-gradient(to right,  hsl(39, 89%, 49%), hsl(40, 84%, 53%));
+  cursor: pointer;
+  height: 140px;
+  width: 150px;
+  padding: 18px;
+  border-radius: 50%;
+  position: absolute;
+  right: 0px;
+  top: -100px;
+  border-bottom: 10px solid rgba(0, 0, 0, 0.2);
+  background: linear-gradient(to right, hsl(39, 89%, 49%), hsl(40, 84%, 53%));
 }
 .border2:active {
-    background: linear-gradient(to right,  hsl(39, 89%, 39%), hsl(40, 84%, 33%));
+  background: linear-gradient(to right, hsl(39, 89%, 39%), hsl(40, 84%, 33%));
 }
 .scissors {
-    display: grid;
-    align-items: center;
-    justify-content: center;
-    height: 140px;
-    width: 150px;
-    border-radius: 50%;
-    background-color: white;
-    border-top:10px solid rgba(0, 0, 0, .1) ;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  height: 140px;
+  width: 150px;
+  border-radius: 50%;
+  background-color: white;
+  border-top: 10px solid rgba(0, 0, 0, 0.1);
 }
 .border3 {
-    cursor: pointer;
-    height: 140px;
-    width: 150px;
-    padding: 18px;
-    border-radius: 50%;
-    position: absolute;
-    bottom: -65px;
-    left: 30%;
-    border-bottom:10px solid  rgba(0, 0, 0, .2) ;
-    background: linear-gradient(to right, hsl(349, 71%, 52%), hsl(349, 70%, 56%));
+  cursor: pointer;
+  height: 140px;
+  width: 150px;
+  padding: 18px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -65px;
+  left: 30%;
+  border-bottom: 10px solid rgba(0, 0, 0, 0.2);
+  background: linear-gradient(to right, hsl(349, 71%, 52%), hsl(349, 70%, 56%));
 }
 .border3:active {
-    background: linear-gradient(to right, hsl(349, 71%, 42%), hsl(349, 70%, 46%));
+  background: linear-gradient(to right, hsl(349, 71%, 42%), hsl(349, 70%, 46%));
 }
 .rock {
-    display: grid;
-    align-items: center;
-    justify-content: center;
-    height: 140px;
-    width: 150px;
-    border-radius: 50%;
-    border-top:10px solid rgba(0, 0, 0, .1) ;
-    background-color: white;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  height: 140px;
+  width: 150px;
+  border-radius: 50%;
+  border-top: 10px solid rgba(0, 0, 0, 0.1);
+  background-color: white;
 }
 
 .removeDisplay {
-    display: none;
+  display: none;
 }
 .hide {
-    visibility: hidden;
+  visibility: hidden;
 }
 .paperGradient {
-    background: linear-gradient(to right, hsl(230, 89%, 62%), hsl(230, 89%, 65%));
+  background: linear-gradient(to right, hsl(230, 89%, 62%), hsl(230, 89%, 65%));
 }
 .rockGradient {
-    background: linear-gradient(to right, hsl(349, 71%, 52%), hsl(349, 70%, 56%));    
+  background: linear-gradient(to right, hsl(349, 71%, 52%), hsl(349, 70%, 56%));
 }
 .scissorsGradient {
-    background: linear-gradient(to right,  hsl(39, 89%, 49%), hsl(40, 84%, 53%));
+  background: linear-gradient(to right, hsl(39, 89%, 49%), hsl(40, 84%, 53%));
 }
 
+@media screen and (max-width: 765px) {
+  body {
+    font-size: 0.8em;
+  }
+  .container {
+    width: 80vw;
+  }
+  .selectPlay {
+    height: 260px;
+    width: 200px;
+    margin-bottom: 10px;
+  }
+  .winnerAnnouncement {
+    width: 100vw;
+    height: 100vh;
+  }
+  .playAgain {
+    padding: 0.8em 1.7em;
+    border-radius: 6px;
+  }
 
-@media screen and (max-width:765px) {
-    body {
-    font-size: .8em;
-    } 
-    .container{
-        width: 80vw;
-    }
-    .selectPlay {
-        height: 260px;
-        width: 200px;
-        margin-bottom: 10px;
-    }
-    .winnerAnnouncement {
-        width: 100vw;
-        height: 100vh;
-    }
-    .playAgain {
-        padding: .8em 1.7em;
-        border-radius: 6px;
-    }
-    
-    .selection1, .selection2, .shape {
-        height: 90px;
-        width: 100px;
-        margin-bottom: 4em;
-    }
-    .text {
-        font-size:.7em;
-        margin: 2em 10px;
-    }
-    .morePlay {
-        display: block;
-        position: absolute;
-        padding: 0;
-        bottom: 4.3em;
-    }
-    .border1,.border2,.border3,.rock,.paper,.scissors {
-        height: 70px;
-        width: 80px
-    }
-    .border1 {
-        left: -40px;
-        top: -24px;
-    }
-    .border2 {
-        right: -40px;
-        top: -24px;
-    }
-    .border3 {
-        bottom: 13px;
-        left: 20%;
-    }
-    .rules {    
-        bottom: 1.2em;
-        left: 50%;
-        margin-left: -50px;
-    }
- }
+  .selection1,
+  .selection2,
+  .shape {
+    height: 90px;
+    width: 100px;
+    margin-bottom: 4em;
+  }
+  .text {
+    font-size: 0.7em;
+    margin: 2em 10px;
+  }
+  .morePlay {
+    display: block;
+    position: absolute;
+    padding: 0;
+    bottom: 4em;
+    left: 50%;
+    margin-left: -50px;
+  }
+  .border1,
+  .border2,
+  .border3,
+  .rock,
+  .paper,
+  .scissors {
+    height: 70px;
+    width: 80px;
+  }
+  .border1 {
+    left: -40px;
+    top: -24px;
+  }
+  .border2 {
+    right: -40px;
+    top: -24px;
+  }
+  .border3 {
+    bottom: 13px;
+    left: 20%;
+  }
+  .rules {
+    bottom: 1em;
+    left: 50%;
+    margin-left: -50px;
+  }
+}
